@@ -1,6 +1,9 @@
 # NeuralNetworkStocks in Python: An Introductory project and guide
 [![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/VivekPa/NeuralNetworkStocks" data-icon="octicon-star" aria-label="Star VivekPa/NeuralNetworkStocks on GitHub">Star</a>
 

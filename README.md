@@ -1,12 +1,6 @@
 # NeuralNetworkStocks in Python: An Introductory project and guide
 [![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/VivekPa/NeuralNetworkStocks" data-icon="octicon-star" aria-label="Star VivekPa/NeuralNetworkStocks on GitHub">Star</a>
-
 [![GitHub license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://github.com/VivekPa/NeuralNetworkStocks/blob/master/LICENSE.txt) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 NeuralNetworkStocks is meant to be a **straightforward** and **developable** project that applies Neural Network techniques to make stock market predictions. My goal is for you to understand the fundamentals of how Neural Networks are implemented to make stock market predictions, from getting the data, preprocessing it to evaluating the model using backtests and the various nuances that go into building an effective model. You are definitely encouraged to **extend this project** in any direction you wish. If you are struggling to find ways to improve this model, check out the end of this README for ample suggestions. 

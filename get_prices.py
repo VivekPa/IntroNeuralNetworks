@@ -29,7 +29,7 @@ def get_stock_data(ticker, start_date, end_date):
             time.sleep(120)
             get_stock_data(ticker, start_date, end_date)
     stock_data = all_data["Adj Close"]
-    stock_data.to_csv(f"{ticker}_prices.csv")
+    stock_data.to_csv("stock_prices.csv")
 
 
 def get_sp500(start_date, end_date):

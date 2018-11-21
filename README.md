@@ -1,11 +1,11 @@
-# NeuralNetworkStocks in Python: An Introductory project and guide
+# IntroNeuralNetworks in Python: A Template Project
 [![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 [![GitHub license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://github.com/VivekPa/NeuralNetworkStocks/blob/master/LICENSE.txt) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-NeuralNetworkStocks is meant to be a **straightforward** and **developable** project that applies Neural Network techniques to make stock market predictions. My goal is for you to understand the fundamentals of how Neural Networks are implemented to make stock market predictions, from getting the data, preprocessing it to evaluating the model using backtests and the various nuances that go into building an effective model. You are definitely encouraged to **extend this project** in any direction you wish. If you are struggling to find ways to improve this model, check out the end of this README for ample suggestions. 
+IntroNeuralNetworks is a project that **introduces** neural networks and illustrates an example of how one can use neural networks to predict stock prices. It is built with the goal of allowing beginners to understand the fundamentals of how neural network models are built and go through the entire workflow of machine learning. This model is in no way sophisticated, so do improve upon this base project in any way. 
 
-In essence, we will be downloading stock price data from Yahoo Finance, then use `pandas` and `numpy` to preprocess the dataframes such that they can be inputted into our neural network models (`keras` has a specific requirements for the input data, which I fill elaborate on later). Subsequently, we will build our neural network model using the very handy layering structure of `keras`. In this project will build two types of neural networks: the multilayer perceptron and the Long Short Term Memory (LSTM) neural network. Both of those will be further elaborated upon later. Finally, we will backtest our model's predictive ability using an elementary backtest system. 
+The core steps involved is: download stock price data from Yahoo Finance, preprocess the dataframes according to specifications for neural network libraries and finally train the neural network model and backtest over historical data. 
 
 This model is not meant to be used to live trade stocks with. However, with further extensions, this model can definitely be used to support your trading strategies. 
 
@@ -17,8 +17,8 @@ I hope you find this project useful in your journey as a trader or a machine lea
 ## Contents
 - [Contents](#contents)
 - [Overview](#overview)
-- [Quickstart](#quickstart)
-- [Preliminaries](#preliminaries)
+- [Getting Started](#getting-started)
+- [Requirements](#requirements)
 - [Stock Price Data](#stock-price-data)
 - [Preprocessing](#preprocessing)
   - [Preparing Train Dataset](#preparing-train-dataset)
@@ -28,7 +28,7 @@ I hope you find this project useful in your journey as a trader or a machine lea
   - [LSTM Model](#lstm-model)
 - [Backtesting](#backtesting)
 - [Stock Predictions](#stock-predictions)
-- [What next?](#what-next?)
+- [Extensions](#extensions)
   - [Getting Data](#getting-data)
   - [Neural Network Model](#neuron-network-model)
   - [Supporting Trade](#supporting-trade)
@@ -46,7 +46,7 @@ The overall workflow for this project is as such:
 
 Although this is very general, it is essentially what you need to build your own machine learning or neural network model.
 
-## Quickstart
+## Getting Started
 
 For those of you that do not want to learn about the construction of the model (although I highly suggest you to), clone and download the project, unzip it to your preferred folder and run the following code in your computer.
 
@@ -54,11 +54,11 @@ For those of you that do not want to learn about the construction of the model (
 pip install -r requirements.txt
 python LSTM_model.py
 ```
-It's as simple as that! Now your neural network will be trained and ready to make predictions about the stock price (remember to backtest if you are going to use the predictions).
+It's as simple as that!
 
-## Preliminaries
+## Requirements
 
-For those who want a more details manual, this program is built in Python 3.6. If you are using an earlier version of Python, like Python 3.x, you will run into problems with syntax when it comes to f strings. I do suggest that you update to Python 3.6, if you want to appreciate the elegance of this program.
+For those who want a more details manual, this program is built in Python 3.6. If you are using an earlier version of Python, like Python 3.x, you will run into problems with syntax when it comes to f strings. I do suggest that you update to Python 3.6.
 
 ```bash
 pip install -r requirements.txt
@@ -122,7 +122,7 @@ X_predict = np.array(stock).reshape((1, 10)) / 200
 print(model.predict(X_predict)*200)
 ```
 
-## What next?
+## Extensions
 
 As mentioned before, this projected is highly extendable, and here some ideas for improving the project.
 
